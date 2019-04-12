@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 45;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,13 +22,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 8401A8D11B39601400269D14;
 			remoteInfo = FontAwesome;
-		};
-		8401A9641B398B5600269D14 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8401A9461B398B5600269D14 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8401A94D1B398B5600269D14;
-			remoteInfo = FontAwesomeDemo;
 		};
 		841575D51B39AB71001092B6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -61,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		68B6161522608C4D007EB741 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../FontAwesomeTests/Info.plist; sourceTree = "<group>"; };
 		8401A94E1B398B5600269D14 /* FontAwesomeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FontAwesomeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8401A9521B398B5600269D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8401A9531B398B5600269D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +62,6 @@
 		8401A9581B398B5600269D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8401A95A1B398B5600269D14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8401A95D1B398B5600269D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		8401A9631B398B5600269D14 /* FontAwesomeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FontAwesomeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		841575D01B39AB71001092B6 /* FontAwesome.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FontAwesome.xcodeproj; path = ../FontAwesome.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,19 +74,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8401A9601B398B5600269D14 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		8401A9451B398B5600269D14 = {
 			isa = PBXGroup;
 			children = (
+				68B6161522608C4D007EB741 /* Info.plist */,
 				8401A9501B398B5600269D14 /* FontAwesomeDemo */,
 				8401A94F1B398B5600269D14 /* Products */,
 				841575D01B39AB71001092B6 /* FontAwesome.xcodeproj */,
@@ -105,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				8401A94E1B398B5600269D14 /* FontAwesomeDemo.app */,
-				8401A9631B398B5600269D14 /* FontAwesomeDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -170,24 +156,6 @@
 			productReference = 8401A94E1B398B5600269D14 /* FontAwesomeDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8401A9621B398B5600269D14 /* FontAwesomeDemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8401A9701B398B5600269D14 /* Build configuration list for PBXNativeTarget "FontAwesomeDemoTests" */;
-			buildPhases = (
-				8401A95F1B398B5600269D14 /* Sources */,
-				8401A9601B398B5600269D14 /* Frameworks */,
-				8401A9611B398B5600269D14 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8401A9651B398B5600269D14 /* PBXTargetDependency */,
-			);
-			name = FontAwesomeDemoTests;
-			productName = FontAwesomeDemoTests;
-			productReference = 8401A9631B398B5600269D14 /* FontAwesomeDemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,21 +163,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 1010;
 				TargetAttributes = {
 					8401A94D1B398B5600269D14 = {
 						CreatedOnToolsVersion = 6.3.2;
-						LastSwiftMigration = 0800;
-					};
-					8401A9621B398B5600269D14 = {
-						CreatedOnToolsVersion = 6.3.2;
-						LastSwiftMigration = 0800;
-						TestTargetID = 8401A94D1B398B5600269D14;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
 			buildConfigurationList = 8401A9491B398B5600269D14 /* Build configuration list for PBXProject "FontAwesomeDemo" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 3.1";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -228,7 +191,6 @@
 			projectRoot = "";
 			targets = (
 				8401A94D1B398B5600269D14 /* FontAwesomeDemo */,
-				8401A9621B398B5600269D14 /* FontAwesomeDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -275,13 +237,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8401A9611B398B5600269D14 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,13 +249,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8401A95F1B398B5600269D14 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,11 +256,6 @@
 			isa = PBXTargetDependency;
 			name = FontAwesome;
 			targetProxy = 1025818D1C2B187200146E20 /* PBXContainerItemProxy */;
-		};
-		8401A9651B398B5600269D14 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8401A94D1B398B5600269D14 /* FontAwesomeDemo */;
-			targetProxy = 8401A9641B398B5600269D14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -348,12 +291,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -401,12 +346,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -439,11 +386,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Y3R3782BW;
 				INFOPLIST_FILE = FontAwesomeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -451,49 +400,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9Y3R3782BW;
 				INFOPLIST_FILE = FontAwesomeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		8401A9711B398B5600269D14 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FontAwesomeDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontAwesomeDemo.app/FontAwesomeDemo";
-			};
-			name = Debug;
-		};
-		8401A9721B398B5600269D14 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = FontAwesomeDemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "im.thi.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FontAwesomeDemo.app/FontAwesomeDemo";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -514,15 +427,6 @@
 			buildConfigurations = (
 				8401A96E1B398B5600269D14 /* Debug */,
 				8401A96F1B398B5600269D14 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8401A9701B398B5600269D14 /* Build configuration list for PBXNativeTarget "FontAwesomeDemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8401A9711B398B5600269D14 /* Debug */,
-				8401A9721B398B5600269D14 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

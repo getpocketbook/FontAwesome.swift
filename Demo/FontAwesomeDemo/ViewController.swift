@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         label.font = UIFont.fontAwesome(ofSize: 100)
         label.text = String.fontAwesomeIcon(name: FontAwesome.github)
 
-        let attributes = [NSAttributedStringKey.font: UIFont.fontAwesome(ofSize: 20)]
+        let attributes = [NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: 20)]
 
         // FontAwesome icon in button
         button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
